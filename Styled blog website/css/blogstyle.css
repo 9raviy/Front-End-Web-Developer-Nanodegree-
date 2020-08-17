@@ -1,0 +1,77 @@
+@import "layout.css";
+@import "nav.css";
+@import "footer.css";
+@import "sidebar.css";
+@import "social.css";
+.blog-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header " "text" "image" "sidebar" "footer";
+    margin: auto;
+    grid-gap: 10px;
+}
+
+@media (min-width:600px) {
+    .blog-container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "header header header header" "text text image sidebar" "text text image sidebar" "text text image sidebar" "footer footer footer footer";
+        margin: auto;
+        grid-gap: 10px;
+    }
+}
+
+.main {
+    grid-area: text;
+    display: grid;
+    width: 100%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: auto;
+}
+
+.image {
+    grid-area: image;
+    display: grid;
+    width: 100%;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: auto;
+    object-fit: contain;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.blogtext {
+    width: 90%;
+    height: 90%;
+    text-align: justify;
+}
+
+img {
+    object-fit: contain;
+}
+
+.heading {
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+a:link {
+    text-decoration: none;
+}

@@ -1,0 +1,4 @@
+.hd {
+    grid-area: header;
+    background-color: orange;
+}

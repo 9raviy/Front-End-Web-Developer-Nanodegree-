@@ -1,0 +1,38 @@
+.sd {
+    grid-area: sidebar;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+#bloglist {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+}
+
+#listing {
+    display: flex;
+    margin: 2px;
+    width: 90%;
+    height: 40%;
+}
+
+#subscribe {
+    margin: 2px;
+    width: 90%;
+    height: 50%;
+    text-align: center;
+}
+
+.ravi {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+    align-content: center;
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+}

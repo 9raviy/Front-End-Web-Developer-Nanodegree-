@@ -1,0 +1,6 @@
+.fd {
+    grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    align-content: center;
+}

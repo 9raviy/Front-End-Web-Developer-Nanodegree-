@@ -1,0 +1,83 @@
+@import "layout.css";
+@import "nav.css";
+@import "footer.css";
+@import "sidebar.css";
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "sidebar" "footer";
+    margin: auto;
+    grid-gap: 10px;
+}
+
+@media (min-width:600px) {
+    .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "header header header header" "main main main sidebar" "main main main sidebar" "main main main sidebar" "footer footer footer footer";
+        margin: auto;
+        grid-gap: 10px;
+    }
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding: auto;
+}
+
+@media (min-width:600px) {
+    .main {
+        grid-area: main;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: auto;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.imagebox {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    height: 90%;
+}
+
+.blogtext {
+    width: 50%;
+    height: 90%;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.heading {
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+}
+
+a:link {
+    text-decoration: none;
+}

@@ -1,0 +1,30 @@
+.btn {
+    width: 100px;
+    padding: 5px 0;
+    font-family: serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-align: center;    
+    font-weight: 300;
+    margin: 15px 0;
+    cursor: pointer;
+    display: inline-block;
+    color:darkblue;
+  }
+  
+  .btn-primary {
+    background-color: orange;
+    border-radius: 3px;
+    color: darkblue;
+    transition: all 0.5s;
+  }
+  
+  .btn-primary:hover {
+    background-color: darkblue;
+    border: 2px solid #f6aa1c;
+    border-radius: 3px;
+    color: white;
+    
+  }
+  
+ 
