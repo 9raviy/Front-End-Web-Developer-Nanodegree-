@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Your Personal Travel Planner</h1>
+    </header>
+
+    <main id="app">
+
+        <section>
+            <!-- Use form to take inputs like Destination City, Travel Date and Arrival Date -->
+            <form>
+                <label for="city">Enter City</label>
+                <input type="text" name="city" id="city" placeholder="enter destination city" required>
+                <br>
+                <label for="departure_date">Enter date of departure</label>
+
+                <input type="date" name="departure_date" id="departure_date" placeholder="YYYY-MM-DD" required>
+                <br>
+                <label for="arrival_date">Enter date of arrival</label>
+
+                <input type="date" name="arrival_date" id="arrival_date" placeholder="YYYY-MM-DD" required>
+                <br>
+                <button id="generate" type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Display the details dynamically in the below section -->
+        <section id="result">
+            <h2 class="final"></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p class="center">Capstone project for Udacity Frontend Nanodegree built by <strong>Ravi</strong></p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
